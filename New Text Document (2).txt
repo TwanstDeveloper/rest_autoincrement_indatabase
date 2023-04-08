@@ -1,0 +1,5 @@
+SET @reset := 0; 
+UPDATE users SET id = @reset:= @reset + 1;
+ALTER TABLE users AUTO_INCREMENT=1;
+
+
